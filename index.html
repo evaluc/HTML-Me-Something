@@ -3,33 +3,36 @@
    <head>
       <title>EL Food Photography</title>
       <link href=styles.css rel="stylesheet" type="text/css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cedarville+Cursive&family=Shadows+Into+Light&display=swap" rel="stylesheet">
    </head>
    <body>
-      <header>Header Should Do Header Things?</header>
+      <header class="wavy-line"></header>
       <main>
          <article>
-            <h1 id="mainHeading">INSERT PAGE HEADING HERE</h1>
+            <h1 id="mainHeading">Evan's Food Notebook</h1>
             <p class="funParagraph" id="testP">Cooking is one of my favorite hobbies and every so often I like to apply another hobby - <b>photography</b> - to the finished results.<br> 
             What follows are some of the best shots from succesful recipes in the past few years:</p>
-            <section>
-               <h2>Beef &amp; Broccoli Rice Bowl</h2>
-               <img src="/images/broccolibeef.jpg" alt="Roasted broccoli and sesame-covered beef side-by-side over white rice in a white bowl on a red background.">
-               <p>Dark soy sauce is sometimes a little <i>too</i> potent if you're not careful.</p>
+            <section class="polaroidSnap" id="riceBowlCard">
+               <h2 class="photoHeader">Beef &amp; Broccoli Rice Bowl</h2>
+               <img class="foodImage" src="/images/broccolibeef.jpg" alt="Roasted broccoli and sesame-covered beef side-by-side over white rice in a white bowl on a red background.">
+               <p class="foodCaption">Dark soy sauce is sometimes a little <i>too</i> potent if you're not careful.</p>
             </section>
-            <section>
-               <h2>Sausage &amp; Banana Pepper Pizza </h2>
-               <img src="/images/pizza.jpg" alt="Angle shot of homemade rectangular sausage and banana pepper pizza on a metal rack.">
-               <p>No provel cheese to be found here.</p>
+            <section class="polaroidSnap" id="pizzaCard">
+               <h2 class="photoHeader">Sausage &amp; Pepper Pizza </h2>
+               <img class="foodImage" src="/images/pizza.jpg" alt="Angle shot of homemade rectangular sausage and banana pepper pizza on a metal rack.">
+               <p class="foodCaption">No provel cheese to be found here.</p>
             </section>
-            <section>
-               <h2>Refrigerator Pickles</h2>
-               <img src="/images/pickles.jpg" alt="A glass bowl full of homemade pickles in liquid. Various herbs and spice including black peppercorns and fresh dill are visible.">
-               <p>Secret recipe spicy garlic-dill pickles.</p>
+            <section class="polaroidSnap" id="pickleCard">
+               <h2 class="photoHeader">Refrigerator Pickles</h2>
+               <img class="foodImage" src="/images/pickles.jpg" alt="A glass bowl full of homemade pickles in liquid. Various herbs and spice including black peppercorns and fresh dill are visible.">
+               <p class="foodCaption">Secret recipe spicy garlic-dill pickles.</p>
             </section>
-            <section>
-               <h2>Glazed Potstickers</h2>
-               <img src="/images/potstickers.jpg" alt="Potstickers arranged in a pan arranged in a pinwheel pattern covered with a glossy chili-garlic sauce.">
-               <p>Potstickers immersed a glossy gochujang sauce.</p>
+            <section class="polaroidSnap" id="potstickerCard">
+               <h2 class="photoHeader">Glazed Potstickers</h2>
+               <img class="foodImage" src="/images/potstickers.jpg" alt="Potstickers arranged in a pan arranged in a pinwheel pattern covered with a glossy chili-garlic sauce.">
+               <p class="foodCaption">Potstickers immersed a glossy gochujang sauce.</p>
             </section>
          </article>
       </main>
@@ -38,8 +41,3 @@
       </footer>
    </body>
 </html>
-
-<!--TODO:
-Image scaling
-Section/tag by meal type - breakfast, lunch, dinner, snack, appetizer?
--->

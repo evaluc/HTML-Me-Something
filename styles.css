@@ -1,14 +1,140 @@
-/* Write your CSS here! */
-
 body {
     margin: 8px;
     display: block;
+    background-color: rgba(15, 9, 4, 0.746);
+}
+
+header {
+    padding-top: 20px;
+}
+
+footer {
+    position: absolute;
+    right: 0px;
+    padding: 0px 10px 2px 0px;
+    color: rgb(207, 50, 50);
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 
 #mainHeading {
     color: red;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    text-align: center;
 }
 
 .funParagraph {
     color: green;
+    padding-bottom: 100px;
+    font-size: 35px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
 }
+
+.photoHeader {
+    text-align: center;
+    padding: 15px 15px 0px 15px;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 32px;
+}
+
+.foodImage {
+    width: 80%;
+    height: 80%;
+    border: 6px;
+    border-radius: 8px;
+    background-color: white;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.foodCaption {
+    text-align: center;
+    padding: 5px 15px;
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 22px;
+}
+
+.polaroidSnap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+
+#riceBowlCard {
+    transform: rotate(22deg);
+    padding-bottom: 50px;
+}
+
+#pizzaCard {
+    transform: rotate(-30deg);
+    padding-bottom: 50px;
+}
+
+#pickleCard {
+    transform: rotate(22deg);
+    padding-bottom: 50px;
+}
+
+#potstickerCard {
+    transform: rotate(-25deg);
+    padding-bottom: 50px;
+}
+
+
+.shadows-into-light-regular {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .amatic-sc-regular {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .amatic-sc-bold {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* HTML: <div class="wavy-line"></div> */
+.wavy-line {
+    --s: 44px; /* size of the wave */
+    --b: 16px; /* thickness of the line */
+    --m: 0.4; /* curvature of the wave [0 2] */
+    
+    background: rgb(207, 50, 50);
+    --R: calc(var(--s)*sqrt(var(--m)*var(--m) + 1) + var(--b)/2);
+    height: calc(2*var(--R));
+    width: 100%;
+    --_g: #0000 calc(99% - var(--b)), #000 calc(101% - var(--b)) 99%, #0000 101%;
+    mask:
+      radial-gradient(var(--R) at left 50% bottom calc(-1*var(--m)*var(--s)), var(--_g)) 
+       calc(50% - 2*var(--s)) calc(50% - var(--s)/2 - var(--b)/2)/calc(4*var(--s)) calc(var(--s) + var(--b)) repeat-x,
+      radial-gradient(var(--R) at left 50% top calc(-1*var(--m)*var(--s)),var(--_g)) 
+       50% calc(50% + var(--s)/2 + var(--b)/2)/calc(4*var(--s)) calc(var(--s) + var(--b)) repeat-x;
+  }
